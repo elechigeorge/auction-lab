@@ -129,7 +129,7 @@ export const getSingle = (id) => async (dispatch) => {
         },
       };
   
-      const { data } = await api.get(`/auction/${id}`, config);
+      const { data } = await api.get(`/auction/z/${id}`, config);
   
       dispatch({
         type: GET_SINGLE_AUCTION_SUCCESS,
