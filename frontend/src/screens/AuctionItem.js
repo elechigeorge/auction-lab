@@ -73,7 +73,7 @@ const AuctionItem = () => {
             </p>
 
             <h3 className="mb-3">
-              <Moment fromNow>{auction.expiry}</Moment>
+              <Moment format="YYYY/MM/DD">{auction.expiry}</Moment>
             </h3>
             <div className="mt-3">
               <Image

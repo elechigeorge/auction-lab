@@ -15,8 +15,7 @@ const AuctionSchema = new mongoose.Schema({
       ref: "Bid",
     },
   expiry: {
-    type: Date,
-    default: Date.now
+    type: Date
   }
 });
 
