@@ -77,7 +77,7 @@ const AuctionItem = () => {
             </h3>
             <div className="mt-3">
               <Image
-                src={`http://localhost:4000/${auction.image}`}
+                src={`https://auction-lab.herokuapp.com/${auction.image}`}
                 alt="auction image"
               />
             </div>

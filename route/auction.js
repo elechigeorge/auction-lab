@@ -10,8 +10,8 @@ import {
 
 import {authenticate} from "../middleware/authenticate.js"
 
-router.route("/").get(grab_auction);
+router.route("/z").get(grab_auction);
 router.route("/create").post(authenticate, create_auction);
-router.route("/:id").delete(authenticate, delete_auction).get(single_auction);
+router.route("/z/:id").delete(authenticate, delete_auction).get(single_auction);
 
 export default router;

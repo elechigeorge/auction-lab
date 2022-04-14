@@ -33,7 +33,7 @@ const AuctionHome = () => {
                   <Card style={{ width: "100%" }}>
                     <Card.Img
                       variant="top"
-                      src={`http://localhost:4000/${auction.image}`}
+                      src={`https://auction-lab.herokuapp.com/${auction.image}`}
                     />
                     <Card.Body>
                       <Card.Title>{auction.title}</Card.Title>

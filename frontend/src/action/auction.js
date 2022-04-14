@@ -68,7 +68,7 @@ export const grabAuction = () => async (dispatch) => {
       },
     };
 
-    const { data } = await api.get("/auction", config);
+    const { data } = await api.get("/auction/z", config);
 
     dispatch({
       type: GET_AUCTION_SUCCESS,
@@ -98,7 +98,7 @@ export const removeSingleAuction = (id) => async (dispatch) => {
       },
     };
 
-    const { data } = await api.delete(`/auction/${id}`, config);
+    const { data } = await api.delete(`/auction/z/${id}`, config);
 
     dispatch({
       type: DELETE_AUCTION_SUCCESS,
