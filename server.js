@@ -37,7 +37,7 @@ server.use("/upload/image", ImageUpload);
 
 if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
-  server.use(express.static('fronted/build'));
+  server.use(express.static('frontend/build'));
 
   // Express serve up index.html file if it doesn't recognize route
   server.get('*', (req, res) => {
