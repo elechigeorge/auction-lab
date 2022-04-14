@@ -18,9 +18,9 @@ const server = express();
 
 // setup middlewares
 server.use(cors());
-server.use(express.json());
-server.use(express.urlencoded({ extended: true }));
+server.use(express.json({ limit: '50mb' }));
 server.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+server.use(express.urlencoded({ extended: true, limit: '50mb', parameterLimit: 1000000 }))
 
 // setup database
 mongoose
